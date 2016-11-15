@@ -1,0 +1,11 @@
+blog:
+    resource: "@BlogBundle/Resources/config/routing.yml"
+    prefix:   /
+
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation     
+   
+page:
+    resource: "@AppBundle/Resources/config/routing.yml"
+    prefix:   /

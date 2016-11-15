@@ -1,0 +1,15 @@
+page_show:
+    path:      /blog/{page}
+    defaults:  {_controller: AppBundle:Blog:show, page:10}
+    requirements:
+        page: '\d+'
+        
+index_list:
+    path:       /num/{numb}
+    defaults:   {_controller: AppBundle:Article:index, numb:10}
+    requirements:
+        num:    '\d+'
+
+name_list:
+    path:       /name/{user}
+    defaults:   {_controller: AppBundle:Article:name, user:''}

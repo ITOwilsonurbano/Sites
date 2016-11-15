@@ -1,0 +1,21 @@
+{# empty Twig template #}
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Generating URLs</title>
+    </head>
+    <body>
+        <h1>You parameter added is : {{ pers }}</h1>
+        {% for flash_message in app.session.flashBag.get('notice') %}
+            <div class="flash-notice">
+                {{ flash_message }}
+             </div>
+        {% endfor %}<br>
+       
+        <a href="{{ url('index_list', { 'numb':'10'}) }}">
+            View Numbers
+        </a>   
+
+        
+    </body>
+</html>
